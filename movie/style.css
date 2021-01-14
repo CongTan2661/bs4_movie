@@ -223,7 +223,55 @@ header nav ul li:hover::after{
 .slick-next::before{
     color: #ec7532;
 }
+.pill ul{
+    border-bottom: 1px rgba(0, 0, 0, 0.329) solid;
+    margin-bottom: 40px;
+}
+.pill ul li{
+    padding: 20px 40px 20px 0;
+}
+.pill ul li a{
+    color: black !important;
+    font-size: 20px;
+    letter-spacing: 2px;
+    background: transparent!important;
+    border-bottom: 0px red solid;
+    border-radius: 0!important;
+    padding: 0 ;
+    margin-left: 30px;
+}
+.pill ul li a.active{
+    color: #ec7532!important;
+}
+.pill ul li{
+    position: relative;
+}
+.pill ul li.active::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    background-color: #fbbd61;
+    bottom: 0;
+}
+.pill ul li::after{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 0;
+    background-color: #fbbd61;
+    bottom: 0;
+    transition: all 0.5s;
+}
+.pill ul li:hover::after{
+    width: 100%;
+}
+.tab-content h1{
+    color: #ec7532;
 
+}
 
 
 

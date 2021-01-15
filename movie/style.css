@@ -243,6 +243,9 @@ header nav ul li:hover::after{
 .pill ul li a.active{
     color: #ec7532!important;
 }
+.pill ul li a:hover{
+    border-bottom: 2px red solid;
+}
 .pill ul li{
     position: relative;
 }
@@ -252,7 +255,7 @@ header nav ul li:hover::after{
     display: block;
     height: 4px;
     width: 100%;
-    background-color: #fbbd61;
+    background: linear-gradient(to right, #fbbd61,#ec7532);
     bottom: 0;
 }
 .pill ul li::after{
@@ -261,20 +264,68 @@ header nav ul li:hover::after{
     display: block;
     height: 4px;
     width: 0;
-    background-color: #fbbd61;
+    background:linear-gradient(to right, #fbbd61,#ec7532);
     bottom: 0;
     transition: all 0.5s;
 }
 .pill ul li:hover::after{
     width: 100%;
 }
+#mon{
+    border-bottom: 1px rgba(0, 0, 0, 0.164) solid;
+}
 .tab-content h1{
     color: #ec7532;
-
+    font-size: 14px;
+    letter-spacing: 2px;
 }
-
-
-
+.tab-content h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.tab-content a.btn{
+    color: #ec7532;
+    margin-bottom: 20px;
+    padding: 0;
+    font-size: 14px;
+    letter-spacing: 2px;
+    transition: all 0.5s;
+}
+.tab-content a.btn:hover{
+    color: black !important;
+}
+.tab-content .row .col-md-3 img{
+    border-radius: 10%;
+    height: 80%;
+}
+.tab-content .row .col-md-10 span:nth-child(1){
+    font-size: 18px;
+}
+.tab-content .row .col-md-10 span:nth-child(2){
+    opacity: 0.5;
+}
+.tab-content .row .col-md-10 span:nth-child(2)
+,.tab-content .row .col-md-10 span:nth-child(3)
+,.tab-content .row .col-md-10 span:nth-child(4)
+,.tab-content .row .col-md-10 span:nth-child(5){
+    border: 2px transparent solid;
+    border-radius: 10%;
+    color: #717171;;
+    background-color:#d8d8d8;
+    margin-left: 5px;
+    padding: 7px 10px;
+}
+.tab-content .row .col-md-2 span:nth-child(1){
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.tab-content .row .col-md-2 span:nth-child(2){
+    border: 2px transparent solid;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
 
 
 

@@ -332,6 +332,24 @@ header nav ul li:hover::after{
     color: white;
     padding: 5px;
 }
+/* slick syncing */
+.slider-nav .syncing__item{
+    opacity: 0.35;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: none;
+}
+.slider-nav .syncing__item.slick-active{
+    opacity: 1;
+} 
+.slider-nav .syncing__item.slick-active:hover{
+    opacity: 1;
+}
+.slider-nav .syncing__item img{
+    border-radius: 5%;
+    width: 80%;
+}
+
 
 
 

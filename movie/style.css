@@ -1,3 +1,6 @@
+*{
+    outline: none;
+}
 header{
     position: absolute;
     z-index: 1;
@@ -5,6 +8,7 @@ header{
     transform: translateX(-50%);
     top:20px;
 }
+
 #demo .anima img{
     animation: move 1.5s linear 2s infinite;
 }
@@ -24,7 +28,7 @@ header{
     position: absolute;
     z-index: 1;
     bottom: 0;
-    left: 50%;
+    left: 45%;
 }
 .anima img{
     color: black;
@@ -69,6 +73,10 @@ header nav ul li:hover::after{
     background-position: center;
     background-size: cover;
     padding-top: 250px;
+}
+#demo ul.container{
+    margin: auto !important;
+    margin-bottom: 10px !important;
 }
 .carousel-inner .item1{
     background-image: url(./cinema-layout/img/hero-1.jpg);
@@ -178,6 +186,7 @@ header nav ul li:hover::after{
 .bd{
     overflow: hidden;
     border-radius: 5%;
+    position: relative;
 }
 .bd::after{
     content: "";
@@ -200,16 +209,47 @@ header nav ul li:hover::after{
 .textmovie a:hover{
     padding: 25px;
 }
+.bd img{
+    border-radius: 5%;
+    width: 100%;
+}
 
 @media screen and (max-width:992px){
     .title__heading{
         font-size: 2rem !important;
+    }
+    .pill ul li a{
+        padding: 10px 20px 15px !important;
+    }
+    .tab-content .row .col-md-3 img {
+        width: 100%;
+    }    
+    .line .row{
+        font-size: 12px !important;
+    }
+
+}
+@media screen and (max-width:768px){
+    header nav ul li a{
+        font-size: 12px !important;
     }
 }
 @media screen and (max-width:576px){
     .title__heading{
         font-size: 1rem !important;
     }
+    header nav ul{
+        background: rgba(0, 0, 0, 0.918);
+        text-align: center;
+        width: 100%;
+    }
+ul li a{
+    border-radius: 30%;
+    height: 100%;
+    -webkit-animation: none;
+}
+    
+    
 }
 .title__heading::after{
     content: "";
@@ -278,6 +318,8 @@ header nav ul li:hover::after{
 .line{
     border-bottom: 2px rgba(0, 0, 0, 0.212) solid;
     margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .tab-content h1{
@@ -304,16 +346,16 @@ header nav ul li:hover::after{
     border-radius: 10%;
     height: 80%;
 }
-.tab-content .row .col-md-10 span:nth-child(1){
+.tab-content .row .col-md-9 span:nth-child(1){
     font-size: 14px;
 }
 .overtime{
     opacity: 0.5;
 }
-.tab-content .row .col-md-10 span:nth-child(3)
-,.tab-content .row .col-md-10 span:nth-child(4)
-,.tab-content .row .col-md-10 span:nth-child(5)
-,.tab-content .row .col-md-10 span:nth-child(6){
+.tab-content .row .col-md-9 span:nth-child(3)
+,.tab-content .row .col-md-9 span:nth-child(4)
+,.tab-content .row .col-md-9 span:nth-child(5)
+,.tab-content .row .col-md-9 span:nth-child(6){
     border: 2px transparent solid;
     border-radius: 10%;
     color: #717171;;
@@ -321,11 +363,11 @@ header nav ul li:hover::after{
     margin-left: 5px;
     padding: 7px 10px;
 }
-.tab-content .row .col-md-2 span:nth-child(1){
+.tab-content .row .col-md-3 span:nth-child(1){
     font-size: 14px;
     letter-spacing: 2px;
 }
-.tab-content .row .col-md-2 span:nth-child(2){
+.tab-content .row .col-md-3 span:nth-child(2){
     border: 2px transparent solid;
     border-radius: 50%;
     background-color: black;
